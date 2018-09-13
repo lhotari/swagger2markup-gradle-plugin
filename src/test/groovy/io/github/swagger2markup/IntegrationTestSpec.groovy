@@ -23,7 +23,7 @@ class IntegrationTestSpec extends Specification {
         copyFile('json/swagger_petstore.json', 'input.json')
 
         buildFile << """plugins {
-                    id 'io.github.swagger2markup'
+                    id 'io.github.lhotari.swagger2markup'
                 }
                 convertSwagger2markup {
                   swaggerInputFile file('input.json')
@@ -56,7 +56,7 @@ class IntegrationTestSpec extends Specification {
         copyFile('json/swagger_petstore.json', 'input.json')
 
         buildFile << """plugins {
-                    id 'io.github.swagger2markup'
+                    id 'io.github.lhotari.swagger2markup'
                 }
                 convertSwagger2markup {
                   swaggerInputFile file('input.json')
